@@ -1,8 +1,10 @@
-https://github.com/opentechinstitute/olsrd.git commotion commotion olsrd
-https://github.com/opentechinstitute/serval-dna.git commotion-wireless commotion-wireless serval-dna
-https://github.com/opentechinstitute/commotion-service-manager.git master master commotion-service-manager
-https://github.com/opentechinstitute/serval-crypto.git master master serval-crypto
-https://github.com/opentechinstitute/commotion-linux-py.git master master commotion-linux-py
-https://github.com/opentechinstitute/luci-commotion-linux.git master master luci-commotion-linux
-https://github.com/opentechinstitute/commotion-mesh-applet.git master master commotion-mesh-applet
-https://github.com/opentechinstitute/nm-dispatcher-olsrd.git master master commotion-nm-dispatcher
+# list of repos needed to get commotion-client working 
+# this pulls all of my (Shamanon) forks as neccessary
+# lf fixes get pulled, change Shamanon to opentechintitute
+# comment out lines as apps get built and installed ( they will fail because the depend on eachother )
+https://github.com/Shamanon/serval-dna.git development development serval-dna
+#https://github.com/Shamanon/commotiond.git master master commotiond
+#https://github.com/opentechinstitute/luci-commotion-linux.git master master luci-commotion-linux
+#https://github.com/opentechinstitute/serval-crypto.git master master serval-crypto
+https://github.com/Shamanon/commotion-service-manager.git master master commotion-service-manager
+#https://github.com/Shamanon/commotion-client.git master master commotion-client
