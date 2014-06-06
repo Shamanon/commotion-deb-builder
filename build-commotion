@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # This script is written to pull in a set of Commotion git repos
 # and build against the Debian branches to produce unsigned debs.
@@ -35,7 +35,7 @@ dst = config['default']['dst']
 now = datetime.datetime.now()
 date = now.strftime("%Y-%m-%d_%H-%M")
 newdir = "%s/%s" % (dst,date)
-os.mkdir("%s" % newdir)
+os.makedirs("%s" % newdir)
 
 # now that we have a clean directory we can
 # loop through the defined repos, clone and build against them.
@@ -47,7 +47,7 @@ for repodata in repos(repos_file):
     upstream_branch = repodata[2]
     path = repodata[3]
     localrepopath = "%s/%s" % (newdir, path)
-    os.mkdir(localrepopath)
+    os.makedirs(localrepopath)
 
     # clone the git repo
     os.system("git clone %s %s" % (repourl,localrepopath))

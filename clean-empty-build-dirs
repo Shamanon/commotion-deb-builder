@@ -1,5 +1,5 @@
 #!/bin/bash
-dst=$(grep dst /home/oti/debian/build-commotion.conf |cut -f3 -d " ")
+dst=$(grep dst build-commotion.conf |cut -f3 -d " ")
 
 for dir in $(find "$dst" -maxdepth 1 -type d);do
   count=$(ls $dir |wc -l)
